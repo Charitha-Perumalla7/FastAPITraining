@@ -1,0 +1,51 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments (Always ignore local envs)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment variables & Secrets (CRITICAL: Never commit these)
+.env
+.env.*
+!.env.example
+secrets.toml
+
+# FastAPI / Database specific
+*.db
+*.sqlite3
+openapi.json
+
+# Alembic database migrations (Keep the folder, ignore cache/history if needed)
+# Generally you WANT to commit migrations, but exclude compiled files
+__pycache__/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+flake8/
+.ruff_cache/
+.mypy_cache/
+
+# Logging
+logs/
+*.log
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Operating System Files
+.DS_Store
+Thumbs.db

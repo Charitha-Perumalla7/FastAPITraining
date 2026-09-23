@@ -1,11 +1,14 @@
 from fastapi import FastAPI
 from pymongo import AsyncMongoClient
 
+#creating  fastapi app instance
 app = FastAPI()
 client = AsyncMongoClient("mongodb://localhost:27017/")
 db = client["college"]
 #selection of the collection
 students_collection = db["student"]
+
+
 @app.get("/")
 async def home():
     return {"message": "FastAPI with MongoDB is running"}
