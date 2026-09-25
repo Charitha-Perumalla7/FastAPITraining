@@ -18,3 +18,9 @@ class UserResponse(BaseModel):
     email:EmailStr
     role:UserRole
     created_at:datetime    
+
+class UserUpdate(BaseModel):
+    name: Optional[str] = None
+    email: Optional[EmailStr] = None
+    password: Optional[str] = None
+    role: Optional[str] = None
